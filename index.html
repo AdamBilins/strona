@@ -4,140 +4,45 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<meta
-			name="keywords"
-			content="notatki, pomoc, HTML, CSS, frontend, wskazówki, algorytmy, pseudokod, podstawy programowania"
-		/>
 		<meta
 			name="description"
-			content="Notatki i wskazówki do frontendu i programowania"
+			content="Strona internetowa zawierająca notatki, wskazówki i porady dotyczące HTML."
 		/>
-		<meta name="author" content="Adam Biliński" />
+		<meta
+			name="keywords"
+			content="HTML, notatki, wskazówki, porady, Witryny, aplikacje internetowe"
+		/>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="./styles/icons_all.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800;900;1000&display=swap"
 			rel="stylesheet"
 		/>
-		<script
-			src="https://kit.fontawesome.com/21ceb00e23.js"
-			crossorigin="anonymous"
-		></script>
-		<title>NOTATKI i Wskazówki | Programowanie</title>
+		<link rel="shortcut icon" href="./images/note_icon" type="image/x-icon" />
+		<title>Witryny i aplikacje internetowe | Notatki</title>
 	</head>
 	<body>
-		<nav class="nav">
-			<div class="nav_links_left">
-				<img src="./images/notes-icon.png" alt="ikona notatki" />
-				<div class="page_title">
-					<h1>NOTATKI i <br />Wskazówki</h1>
-				</div>
-			</div>
-			<div class="centerBorder"></div>
-			<div class="nav_links_centered">
-				<a href="#">HTML</a>
-				<a href="#">C++</a>
-				<a href="#">Algorytmy i Pseudokod</a>
-			</div>
-			<div class="nav_links_right">
-				<div class="information_btn">
-					<a href="#"
-						>informacje &nbsp<i class="fa-regular fa-circle-question"></i
-					></a>
-				</div>
-			</div>
-			<nav class="header">
-				<input class="menu-btn" type="checkbox" id="menu-btn" />
-				<label class="menu-icon" for="menu-btn"
-					><span class="navicon"></span
-				></label>
-				<ul class="menu">
-					<li><a href="#">HTML</a></li>
-					<li><a href="#">C++</a></li>
-					<li><a href="#">Algorytmy i Pseudokod</a></li>
-				</ul>
-			</nav>
+		<header>
+			<h1>
+				Witryny i aplikacje internetowe | Notatki
+				<i class="fa-solid fa-book"></i>
+			</h1>
+			<span class="h_name">Adam Biliński Kl.1C</span>
+		</header>
+		<nav class="menu_nav">
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"
+				><span class="navicon"></span
+			></label>
+			<ul class="menu">
+				<li><a href="#">Dział 1</a></li>
+				<li><a href="#">Dział 2</a></li>
+				<li><a href="#">Dział 3</a></li>
+				<li><a href="#">Dział 4</a></li>
+			</ul>
+			<span class="menu_hidden_name">Adam<br />Biliński</span>
 		</nav>
-		<main>
-			<div class="main_head">
-				<div class="main_head_naglowek">
-					<h2>Naucz się</h2>
-					z naszą witryną internetową
-				</div>
-				<ul class="main_head_ul">
-					<li><strong>html</strong></li>
-					<li><strong>c++</strong></li>
-					<li><strong>Algorytmów</strong></li>
-					<li><strong>pseudokodu</strong></li>
-				</ul>
-				<div class="main_head_icons"></div>
-			</div>
-			<div class="html_menu">
-				<div class="html_menu_lewa">
-					<div class="html_menu_head">
-						<h2>html <i class="fa-brands fa-html5"></i></h2>
-					</div>
-					<div class="html_menu_text">
-						Język tworzenia stron <p class="internetowychIikona">internetowych <i class="fa-solid fa-code"></i></span>
-						<div class="html_menu_text_ul">
-							<strong>Technologie <p class="frontendowe">frontendowe:</p></strong> <br />
-							<ul>
-								<li>
-									JavaScript &nbsp; <i class="fa-brands fa-square-js"></i>
-								</li>
-								<li>html &nbsp; <i class="fa-solid fa-file-code"></i></li>
-								<li>css &nbsp;<i class="fa-brands fa-css3-alt"></i></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="html_menu_prawa">
-					<div class="html_menu_img">
-						<img
-							src="./images/html_menu_img.jpg"
-							alt="podstawowa struktura pliku html"
-						/>
-					</div>
-				</div>
-			</div>
-
-			<div class="css_menu">
-				<div class="css_menu_head">
-					<h2>CSS <i class="fa-brands fa-css3-alt"></i></h2>
-				</div>
-				<div class="css_menu_text">
-					<b>Kaskadowe arkusze stylów</b> – język służący do opisu formy prezentacji stron internetowych
-					<div class="css_menu_text_2">
-						Można za jego pomocą zdefiniować wiele parametrów, takich jak rodzaj czcionek, kolor tła, wyrównanie elementów na stronie itp.
-					</div>
-					<div class="css_menu_text_3">
-						<b>CSS</b> jest też niezwykle użyteczny ze względu na obsługę przez większość używanych przeglądarek internetowych
-					</div>
-				</div>
-			</div>
-
-
-			<div class="js_menu">
-				<div class="js_menu_head">
-					<h2>JavaScript <i class="fa-brands fa-square-js"></i></h2>
-				</div>
-				<div class="js_menu_text">
-					<b>JavaScript</b> – to język programowania, który umożliwia wdrożenie na stronie internetowej skomplikowanych elementów, dzięki którym ta strona może nie tylko wyświetlać statyczne informacje, ale również obsługiwać zmianę treści adekwatnie do sytuacji, wyświetlać interaktywne mapy, animacje, grafiki 2D/3D, wideo itd.
-					<div class="js_menu_text_2">
-						Stanowi trzecią warstwę standardowych technologii internetowych (pozostałe dwie to HTML i CSS).
-					</div>
-					<div class="js_menu_text_3">
-						<b>JavaScript</b> zapewniając interaktywność
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer>
-			<div class="footer_text">
-				<a href="#">informacje <i class="fa-regular fa-circle-question"></i></a>
-				<p>&copy; Notatki i Wskazówki</p>
-				<p><b>Adam Biliński</b></p>
-			</div>
-			<div class="footer_icons"></div>
-		</footer>
 	</body>
 </html>
