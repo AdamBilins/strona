@@ -388,10 +388,16 @@ h3 {
 	text-decoration: none;
 	color: #ffffffda;
 	background-color: #11182a49;
-	padding: 15px;
 	border-radius: 15px;
 	transition: cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
 	cursor: default;
+	min-height: 35px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.5em;
+	text-align: center;
 }
 
 .wcanbelearn ul li a:hover {
