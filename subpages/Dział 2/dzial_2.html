@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Strona internetowa zawierająca notatki, wskazówki i porady dotyczące HTML."
+		/>
+		<meta
+			name="keywords"
+			content="HTML, notatki, wskazówki, porady, Witryny, aplikacje internetowe"
+		/>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="../../styles/icons_all.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800;900;1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="./images/note_icon" type="image/x-icon" />
+		<title>Witryny i aplikacje internetowe | Notatki</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="slide-in-blurred-top">
+				Witryny i aplikacje internetowe | Notatki
+				<i class="fa-solid fa-book"></i>
+			</h1>
+			<span class="h_name slide-in-right">Adam Biliński Kl.1C</span>
+		</header>
+		<nav class="navbar">
+			<div class="container nav-container">
+				<input class="checkbox" type="checkbox" name="" id="" />
+				<div class="hamburger-lines">
+					<span class="line line1"></span>
+					<span class="line line2"></span>
+					<span class="line line3"></span>
+				</div>
+				<div class="hamburger_back"></div>
+				<div class="menu-items">
+					<ul>
+						<li>
+							<a href="../../index.html" class="tracking-in-expand">
+								Główna <i class="fa-solid fa-book"></i> &nbsp;</a
+							>
+						</li>
+						<li>
+							<a href="../Dział 1/dzial_1.html" class="tracking-in-expand"
+								>Dział 1</a
+							>
+						</li>
+						<li class="wybrany">
+							<a href="../Dział 2/dzial_2.html" class="tracking-in-expand"
+								>Dział 2</a
+							>
+						</li>
+						<li>
+							<a href="../Dział 3/dzial_3.html" class="tracking-in-expand"
+								>Dział 3</a
+							>
+						</li>
+						<li>
+							<a href="../Dział 4/dzial_4.html" class="tracking-in-expand"
+								>Dział 4</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="main_m">
+				<section class="title_section puff-in-center">
+					<h2>Dział 2</h2>
+					Ucz się dalej frontendu. Dowiedz się co to hiperłącza i poznaj
+					lokalizacje i ścieżki.<br />
+					Znajdziesz tu również informacje o listach i kolorach.
+				</section>
+				<section class="puff-in-center">
+					<h3>HIPERŁĄCZA</h3>
+					<p>
+						<a href="https://www.x-kom.pl/">Hiperłącze do strony x-kom</a><br />
+						Hiperłącze przenosi do innej strony lub pliku, można przekierowywać
+						do pdf, do zip i do exe (działa tak, że można je pobrać) Atrybut
+						target _blank - storna zostanie włączona w innej karcie
+						<a href="https://www.x-kom.pl/" target="_blank"
+							>Hiperłącze do strony x-kom z target blank</a
+						>
+						- storna x-kom włączy się w innej karcie
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>LOKALIZACJA, ŚCIEŻKI</h3>
+					<p>
+						<span>Lokalizacja (ścieżka) względna</span> - działa zawsze, ścieżka
+						ta to np. "file.html" albo "files/file.html" albo "../file.html",
+						ścieżka do katalogu, pozycja innego pliku z punktu widzenia bieżącej
+						pozycji w drzewie katalogów <br />
+						<br />
+
+						<span>Lokalizacja (ścieżka) bezwzględna</span> - nie działa
+						wszędzie, ścieżka lokalna, pełna ściezka dostępu do pliku, np.
+						E:\Witr_aplik\Strona Internetowa. Ten typ ścieżki do pliku
+						uwzględnia wszystkie katalogi poczynając od nazwy dysku, na którym
+						plik się znajduje. <br />
+						<br />
+						<br />
+
+						/ - oznacza szukanie czegoś w jakimś folderze zaczynając od folderu
+						w którym jest plik głowny index.html ./ - oznacza szukanie czegoś w
+						jakimś folderze zaczynając od folderu w którym jest plik głowny
+						index.html Jeśli nie ma nić to np. klasa.html to oznacza że plik
+						głowny index.html znajduje się w tym samym folderze. Jeśli zaczynamy
+						bez nieczego np. pliki/klasa.html to oznacza to samo co / i ./ ../ -
+						oznacza wyjście (cofnięcie się) o jeden. Można to pisać kilka razy
+						np. ../../ żeby wyjśc o 2.
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>STRUKRURA KATALOGÓW</h3>
+					<p>
+						Katalogów używamy do stworzenia hierarchii (nadrzędne, podrzędne
+						katalogi). Do katalogów dajemy poźniej ścieżki.
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>ADRESS</h3>
+					<p>
+						address - tworzy sekcje, jest znacznikiem semantycznym, w tej sekcji
+						jest adres mailowy lub inne dane kontaktowe np. numer telefonu,
+						adres URL, adres fizyczny. Tekst w tej sekcji jest domyslnie
+						wyświetlany kursywą. Dodaje się również podział wiersza przed i po
+						address - domyslnie jest to element blokowy.
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>LISTY - OGÓLNE INFORMACJE</h3>
+					<p>
+						<span>Lista numerowana (upożądkowana)</span> - za pomocą numerów lub
+						a, b, c, d itd, domyślnie jest ustawiony numeryczny typ cyfr liczb
+						arabskich. <br />
+						<span>Lista numerowana (upożądkowana)</span> - ol
+
+						<span>Lista nieupożądkowana</span> - np. za pomocą myślników,
+						kropek, domyślnym typem punktorów jest czarna kropka. <br />
+						<span>Lista nieupożądkowana</span> - ul Lista definicji - rozwija
+						termin, tłumaczy głowny termin
+					</p>
+				</section>
+				<section class="listy puff-in-center">
+					<h3>Domyslny</h3>
+					<ol>
+						<li>Adam</li>
+						<li>Bartek</li>
+						<li>Mikołaj</li>
+					</ol>
+					<h3>Typ I</h3>
+					<ol type="I">
+						<li>Adam</li>
+						<li>Bartek</li>
+						<li>Mikołaj</li>
+					</ol>
+					<h3>Typ i</h3>
+					<ol type="i">
+						<li>Adam</li>
+						<li>Bartek</li>
+						<li>Mikołaj</li>
+					</ol>
+					<h3>Typ A</h3>
+					<ol type="A">
+						<li>Adam</li>
+						<li>Bartek</li>
+						<li>Mikołaj</li>
+					</ol>
+					<h3>Typ a</h3>
+					<ol type="a">
+						<li>Adam</li>
+						<li>Bartek</li>
+						<li>Mikołaj</li>
+					</ol>
+				</section>
+				<section class="listy puff-in-center">
+					<h3>Domyślny</h3>
+					<ul>
+						<li>Adam</li>
+						<li>Bartek</li>
+						<li>Mikołaj</li>
+					</ul>
+					<h3>typ circle</h3>
+					<ul type="circle">
+						<li>Adam</li>
+						<li>Bartek</li>
+						<li>Mikołaj</li>
+					</ul>
+					<h3>Typ square</h3>
+					<ul type="square">
+						<li>Adam</li>
+						<li>Bartek</li>
+						<li>Mikołaj</li>
+					</ul>
+					<h3>Typ disc - jest domyślny</h3>
+					<ul type="disc">
+						<li>Adam</li>
+						<li>Bartek</li>
+						<li>Mikołaj</li>
+					</ul>
+				</section>
+				<section class="puff-in-center">
+					<h3>LISTA DEFINICJI</h3>
+					<p>
+						dl - definiuje liste definicji <br />
+						dt - termin, który wyjaśniamy <br />
+						dd - wyjaśnienie termiminu <br />
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>ZAGNIEŻDŻANIE LIST</h3>
+					<p>
+						<img
+							src="./images/zagniezdzanie_list.jpg"
+							alt="zdjecie zagniezdzanie list"
+						/>
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>Kolory</h3>
+					<p>
+						<span>Barwa</span> to fala świetlna br
+
+						<span>True color</span> - sposób wyświetlania przestrzeni barw na
+						ekranie wyświetlacza, umożliwiający uzyskanie 224 czyli 16.777.216
+						kolorów. Odcienie szarości w komputerze to 28. <br />
+
+						<span>RGB</span> <br />
+						RGB to jeden z modeli przestrzeni barw. R - red, G - green, B -
+						blue. <br />
+						Model RGB jest sześcianem. Dzięki połączeniu tych trzech kolorów,
+						każdy inny kolor może być dalej mieszany. W tworzeniu stron
+						internetowych używa się kolorów modleu RGB lub szesnastkowego.
+						<br />
+						<br />
+						<span>CMYK</span> <br />
+						W drukarkach dodaje się do CMY jeszcze kolor czarny K, ponieważ z
+						połączenia Cyjan, Magenta, Yellow nie wyjdzie dobry kolor czarny,
+						tylko szary.
+					</p>
+					<p>
+						<span>HSV</span> <br />
+						Bardziej dokładnym modelem jest HSV. <br />
+						Ma takie wartości jak: <br />
+						Hue (0 - 360) - odcień barwy <br />
+						Saturation (0% - 100%) - określa gdzie dany odcień barwy znajduje
+						się między barwą monochromatyczną (100%) a białą (0) <br />
+						Value (0-1) - określa jasność od zera do 1 <br />
+						<br />
+
+						HSV jest oparty o model "stożka", już nie sześcianu. <br />
+						W grafice komputerowej do tworzenia obrazów, projekotwania używamy
+						najczęściej modleu HSV. <br />
+						W tworzeniu stron internetowych używa się kolorów modleu RGB lub
+						szesnastkowego, raczej nie HSV. <br />
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>KODOWANIE BARW - KONWERSJA BARW I LICZB</h3>
+					<p>
+						<span>SYSTEM BINARNY, INACZEJ SYSTEM DWÓJKOWY NA DZIESIĘTNY</span>
+						<br />
+						System Binarny działa na 0 i 1 <br />
+						<br />
+
+						1011011101 na dziesiętny <br />
+						Piszemy nad liczbami 0 i 1 potęgi dwójki (1, 2, 4, 8, 16, 32, 64,
+						128, 256, 512) To co nad zerami się nie liczy. Potrzebne są tylko
+						pętegi nad 1. <br />
+						Dodajemy wszystkie liczby kótre były nad jedynkami. <br />
+						Wynikiem jest liczba która jest w systemie dziesiętnym. <br />
+					</p>
+					<p>
+						<span>DZIESIĘTNY NA BINARNY</span> <br />
+						Dzielimy na 2 (uzywająć kreski) <br />
+						Jeśli wynik dzielenia ma resztę to piszemy 1, jeśli nie ma reszty
+						(dzieli się równo) to piszemy 0. <br />
+						Dzielimy przez 2 az dojdziemy do 0. <br />
+						Liczbę w Binarnym odczytujemy w górę - od końca. <br />
+					</p>
+					<p>
+						<span>HEX -> RGB</span> <br />
+						Zmiana polega na konwersji liczb w notacji dziesiętnej na
+						szesnastkową. <br />
+						<br />
+
+						#00 00 00 - pierwsze to warsoć RED, drugie to wartość GRENN, trzecie
+						to warość BLUE. <br />
+						<br />
+
+						Zapis dziesiętny to: 0,1,2,3,4,5,6,7,8,9 <br />
+						Zapis szesnastkowy to: 0,1,2,3,4,5,6,7,8,9, A,B,C,D,E,F <br />
+						Nie można przekroczyć 10 liczb, więc trzeba było dodać A,B,C,D,E,F.
+						<br />
+						<br />
+
+						Więcej niż 225 na witrynach nie musimy umieć zamieniać. <br />
+
+						Dzielimy sbie HEX-a na trzy części (#DAF5A5 to będzie: DA, F5, A5)
+						<br />
+						Kazdą z części mnozymy przez 16 do określonej potęgi (Potęgi 16
+						wzrastają co jeden od prawej do lewej) <br />
+						Wynik w kadzdej z cześci dodajemy. <br />
+						Otrzymaliśmy kolor w RGB (po kolei przepisujemy wyniki w trzech
+						miejscach) <br />
+					</p>
+					<p>
+						<span>RGB -> HEX</span>
+						<br />
+						Pierwszy sposób - potrzebny kalkulator <br />
+						Dzielimy sobie RGB na 3 części. <br />
+						Kazdą z częśli dzielimy przez 16. Wynik jest pierwszym znakiem hex-a
+						w danej części. <br />
+						Resztę która zosatnie musi zostać pomnożona przez 16. Wynik jest
+						drugim znakiem hex-a w danej części Potem wszystkie 3 części łączymy
+						w całość, która będzie W systemie HEX. <br />
+						<br />
+
+						Drugi sposób - łatwiejszy <br />
+						Dzielimy sobie RGB na 3 części. <br />
+						Sprawdzamy jakie największe mnożenie czegoś przez 16 da nam
+						najbliższą mniejsza badź równą liczbę do tej która jest w naszej
+						części. Następnie odejmujemy wynik mnozenia od głownej liczby z
+						części. <br />
+						<br />
+
+						Przykład: <br />
+						255 -> mieści się wynik mnożenia 15 x 16 = 240. <br />
+						255 - 240 = 15 <br />
+						Jest to FF, czyli 15 15. <br />
+					</p>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<h2>Witryny i aplikacje internetowe | Notatki</h2>
+			Naucz się HTML Na witryny i aplikacje internetowe
+			<ul>
+				<li>
+					<a href="../../index.html" class="tracking-in-expand">
+						Główna <i class="fa-solid fa-book"></i> &nbsp;</a
+					>
+				</li>
+				<li>
+					<a href="../Dział 1/dzial_1.html" class="tracking-in-expand"
+						>Dział 1</a
+					>
+				</li>
+				<li class="wybrany">
+					<a href="../Dział 2/dzial_2.html" class="tracking-in-expand"
+						>Dział 2</a
+					>
+				</li>
+				<li>
+					<a href="../Dział 3/dzial_3.html" class="tracking-in-expand"
+						>Dział 3</a
+					>
+				</li>
+				<li>
+					<a href="../Dział 4/dzial_4.html" class="tracking-in-expand"
+						>Dział 4</a
+					>
+				</li>
+			</ul>
+			<span>Adam Biliński Kl.1C</span>
+		</footer>
+	</body>
+</html>

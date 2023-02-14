@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Strona internetowa zawierająca notatki, wskazówki i porady dotyczące HTML."
+		/>
+		<meta
+			name="keywords"
+			content="HTML, notatki, wskazówki, porady, Witryny, aplikacje internetowe"
+		/>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="../../styles/icons_all.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800;900;1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="./images/note_icon" type="image/x-icon" />
+		<title>Witryny i aplikacje internetowe | Notatki</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="slide-in-blurred-top">
+				Witryny i aplikacje internetowe | Notatki
+				<i class="fa-solid fa-book"></i>
+			</h1>
+			<span class="h_name slide-in-right">Adam Biliński Kl.1C</span>
+		</header>
+		<nav class="navbar">
+			<div class="container nav-container">
+				<input class="checkbox" type="checkbox" name="" id="" />
+				<div class="hamburger-lines">
+					<span class="line line1"></span>
+					<span class="line line2"></span>
+					<span class="line line3"></span>
+				</div>
+				<div class="hamburger_back"></div>
+				<div class="menu-items">
+					<ul>
+						<li>
+							<a href="../../index.html" class="tracking-in-expand">
+								Główna <i class="fa-solid fa-book"></i> &nbsp;</a
+							>
+						</li>
+						<li>
+							<a href="../Dział 1/dzial_1.html" class="tracking-in-expand"
+								>Dział 1</a
+							>
+						</li>
+						<li>
+							<a href="../Dział 2/dzial_2.html" class="tracking-in-expand"
+								>Dział 2</a
+							>
+						</li>
+						<li class="wybrany">
+							<a href="../Dział 3/dzial_3.html" class="tracking-in-expand"
+								>Dział 3</a
+							>
+						</li>
+						<li>
+							<a href="../Dział 4/dzial_4.html" class="tracking-in-expand"
+								>Dział 4</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="main_m">
+				<section class="title_section puff-in-center">
+					<h2>Dział 3</h2>
+					Naucz się jak tworzyć tabele. Dowiedz się co to formularze i jak je
+					wykorzystywać.<br />
+					Znajdziesz tu ważne znaczniki.
+				</section>
+				<section class="puff-in-center">
+					<h3>Tabele</h3>
+					<div class="p">
+						Tabele pozwalają na łatwą i czytelną prezentację danych, obrazów,
+						tekstu i innych elementów na stronach internetowych. Służą do
+						przedstawiania danych w postaci tabela- rycznej. Informacje
+						umieszczane na stronie stają się czytelniejsze i łatwiejsze do
+						analizy. W tabelach można umieszczać takie elementy, jak: obrazy,
+						teksty, linki itp.
+						<div class="table">
+							<table border="2">
+								<tr>
+									<th>Imię</th>
+									<th>Nazwisko</th>
+									<th>Klasa</th>
+								</tr>
+								<tr>
+									<td>Adam</td>
+									<td>Biliński</td>
+									<td>1C</td>
+								</tr>
+								<tr>
+									<td>Robert</td>
+									<td>Wiśnia</td>
+									<td>2B</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="p">
+						<span>td</span> - table data - treść w tabeli<br />
+						<span>th</span> - table header - nagłówki tabeli<br />
+						Różnica w wyświetlaniu: th - wyróżnione, td - normalne
+					</div>
+					<div class="p">
+						&lt;table border="2"&gt; <br />
+						&nbsp; &nbsp; &lt;tr&gt; <br />
+						&nbsp; &nbsp; &nbsp; &nbsp; &lt;th&gt;Nagłówki&lt;/th&gt; <br />
+						&nbsp; &nbsp; &lt;/tr&gt; <br />
+						&nbsp; &nbsp; &lt;tr&gt; <br />
+						&nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Treść tabeli&lt;/td&gt; <br />
+						&nbsp; &nbsp; &lt;/tr&gt; <br />
+						&nbsp; &nbsp; &lt;tr&gt; <br />
+						&nbsp; &nbsp; &nbsp; &nbsp; &lt;td&gt;Treść tabeli 2&lt;/td&gt;
+						<br />
+						&nbsp; &nbsp; &lt;/tr&gt; <br />
+						&lt;/table&gt; <br />
+					</div>
+					<div class="p">
+						Kiedyś całe strony tworzono w tabelach - rozmieszczenie na stronie.
+						<br />
+						Teraz tabele przedstawiają dane. Struktura musi zostać zachowana.
+						Tabala nie może się zazębiać - trzeba wpisywać puste pola, zamiast
+						niczego.
+					</div>
+				</section>
+				<section class="puff-in-center">
+					<h3>Scalanie i zmiana koloru</h3>
+					<div class="p">
+						<br />
+						<div class="table">
+							<table border="2" bgcolor="grey">
+								<caption>
+									Uczniowie
+								</caption>
+								<tr bgcolor="black">
+									<th rowspan="4">Dane</th>
+									<th>Imię</th>
+									<th>Nazwisko</th>
+									<th>Klasa</th>
+									<th bgcolor="green">Mail</th>
+								</tr>
+								<tr>
+									<td>Adam</td>
+									<td>Biliński</td>
+									<td>1C</td>
+									<td>----</td>
+								</tr>
+								<tr>
+									<td>Robert</td>
+									<td>Wiśnia</td>
+									<td>2B</td>
+									<td>adres@gmail.com</td>
+								</tr>
+								<tr>
+									<td colspan="4" bgcolor="royalblue">
+										Technikum informatyczne
+									</td>
+								</tr>
+							</table>
+						</div>
+						<br />
+						<br />
+						<div class="table">
+							<table border="2" bgcolor="lightgrey">
+								<caption>
+									Uczniowie
+								</caption>
+								<tr bgcolor="lightblue">
+									<th rowspan="5" bgcolor="royalblue">Dane</th>
+									<th>Lp</th>
+									<th colspan="2">imię i nazwisko</th>
+									<th width="400">Klasa</th>
+								</tr>
+								<tr>
+									<td bgcolor="lightgreen" height="50"><center>1</center></td>
+									<td align="center">Michał</td>
+									<td align="right" valign="bottom">Nowak</td>
+									<td>1A</td>
+								</tr>
+								<tr>
+									<td bgcolor="lightgreen"><center>2</center></td>
+									<td>Patrycja</td>
+									<td>Wiśnia</td>
+									<td>1B</td>
+								</tr>
+								<tr>
+									<td bgcolor="lightgreen">3</td>
+									<td>Robert</td>
+									<td>Augustyniak</td>
+									<td>1A</td>
+								</tr>
+								<tr>
+									<td bgcolor="lightgreen">4</td>
+									<td>Anna</td>
+									<td>Rutkowska</td>
+									<td>1A</td>
+								</tr>
+							</table>
+						</div>
+						<br /><br /><br />
+						<span>rowspan = ""</span> - scaluje w dół (w nawiasie ilość komórek
+						do scalenia) <br />
+						<span>colspan = ""</span> - scaluje w prawo (w nawiasie ilość
+						komórek do scalenia) <br />
+						<span>bgcolor = "yellow"</span> - zmienia kolor tła tabeli, jest to
+						atrybut zdeprecjonowany<br />
+						<span>caption</span> - tytuł tabeli <br />
+						<span>center</span> - można go używać w HTML aby wyśrodkować tabele
+						lub jakąś komurkę <br />
+						<span>align="center"</span> - atrybut który pozwala na wyśrodkowanie
+						(działa troche jak w css: left, center, right, justify) <br />
+						<span>height="50"</span> - można nadać wysokość komórki <br />
+						<span>width="400"</span>- można nadać szerokość komórki <br />
+						<span>valign="bottom"</span> - działa troche jak w css: bottom, top,
+						middle
+					</div>
+				</section>
+				<section class="puff-in-center">
+					<h3>Formularze</h3>
+					<div class="p">
+						<form>
+							<label>Podaj swoje imię</label>
+							<div class="input">
+								<input
+									type="text"
+									name="imię"
+									value="Tekst"
+									placeholder="Podaj imię"
+									size="50"
+									maxlength="10"
+									required
+								/>
+							</div>
+							<input type="password" placeholder="Podaj chasło: " />
+							<input type="button" value="Button" />
+							<input type="submit" value="Submit" />
+							<input type="reset" value="Usuń wszystko" />
+							<button>Button</button>
+							<br />
+							<br />
+							<label>Radio - Wybierz ulubiojną (jedną) markę samochodu: </label>
+							<br />
+							<input type="radio" value="Audi" name="car" />
+							<label>Audi</label> <br />
+							<input type="radio" value="Nissan" name="car" />
+							<label>Nissan</label> <br />
+							<input type="radio" value="Ford" name="car" />
+							<label>Ford</label> <br />
+							<br />
+							<br />
+							<label
+								>Checkbox - Wybierz swoje ulubione marki samochodów:
+							</label>
+							<br />
+							<input type="checkbox" value="Audi" />
+							<label>Audi</label> <br />
+							<input type="checkbox" value="Nissan" />
+							<label>Nissan</label> <br />
+							<input type="checkbox" value="Ford" />
+							<label>Ford</label> <br />
+							<br />
+							<br />
+							<input type="datetime" />
+							<input type="datetime-local" />
+							<input type="date" />
+							<input type="time" />
+							<input type="month" />
+							<input type="week" />
+							<input type="file" />
+							<input type="color" />
+							<input type="range" min="0" max="200" />
+							<input type="email" />
+							<input type="hidden" />
+							<input type="image" />
+							<input type="number" />
+							<input type="serach" />
+							<input type="url" />
+							<input type="tel" />
+							<br /><br />
+							<textarea></textarea>
+						</form>
+					</div>
+				</section>
+				<section class="puff-in-center">
+					<div class="p">
+						<span>
+							Formularz to np. dokument z miejscami do wypełniania. Formularze
+							służą użytkownikom do wprowadzania danych wejściowych do witryny,
+							celem ich przetworzenia (np. formularz rejestracji, który
+							wprowadza nowego użytkownika do bazy, albo formularz logowania,
+							który wprowadza login i hasło, których poprawność następnie
+							sprawdzamy w bazie danych).
+						</span>
+					</div>
+					<div class="p">
+						&lt;form&gt; - określa formularz, jest potrzebny aby była zachowana
+						semantyka<br />
+						<b
+							>Formanty i kontrolki to jest to samo. Są to przyciski, okna
+							dialogowe, pola wyboru.</b
+						>
+						- <br />
+						<br />
+
+						<span>&lt;input&gt;</span> - określa pole wejśćiowe w którym
+						użytkownik może wprowadzać dane<br />
+						<span>&lt;input type="text"&gt;</span> - definiuje jednowierszowe
+						pole tekstowe, które domyślnie mieści maksymalnie 20 znaków <br />
+						<br />
+						<span>&lt;input type="button"&gt;</span> - definiuje klikalny
+						przycisk, domyślnie nie ma na nim tekstu, używany jest np. razem z
+						JavaScript do aktywacji jakiegoś skryptu<br />
+						<span>&lt;input type="submit""&gt;</span> - domyślnie ma tekst -
+						zależy od przeglądarki np. prześlij, submit przeładowuje stronę -
+						jest to ważne aby to połączyć z backendem, submit słuzy do
+						przesyłania wartości formularza - przycisk przesyłania<br />
+						<span>&lt;input type="reset""&gt;</span> - domyślnie pisze resetuj,
+						resetuje wszystkie wartości formularza do jego wartości początkowych
+						(resetuje wszystko co znajduje się w danym form)<br />
+						<span>&lt;input type="password"&gt;</span> - służy do haseł, wpisane
+						znaki są maskowane/ukryty za pomocą kropek, pole hasła <br />
+						<span>&lt;button"&gt;&lt;/button"&gt;</span> - Pomiędzy znacznikami
+						wpisuje się tekst na przycisku, przeładowuje stronę, domyślnie nie
+						ma tekstu, można na niego nałożyć zdjęcie <br />
+						<span>&lt;input type="radio"&gt;</span> - kropka wyboru, za jej
+						pomocą możemy zanaczyć 1 z wyborów - a tak przynajmiej powinno być,
+						value na radio przypisuje wartość kropce (nie wyświetla jej), do
+						teksu należy użyć label, kontrolkom radio trzeba dać name=""
+						(wszystkie w jednym formularzu tak samo - chodzi o te które chcemy
+						aby dało się zaznaczyć tylko jedną)<br />
+						<span>&lt;input type="checkbox"&gt;</span> - wuelokrotny wybór,
+						można zaznaczać i odznaczaćm używa się z value, chyba bez name
+						<br />
+						<span>&lt;input type="datetime"&gt;</span> - zwykłe pole tekstowe do
+						wpisywania daty <br />
+						<span>&lt;input type="datetime-local"&gt;</span> - pole tekstowe do
+						wyboru/wpisywania daty - kalendarz, można ją wybrać - dzięń miesiąc,
+						rok, godzina<br />
+						<span>&lt;input type="date"&gt;</span> - pole tekstowe do
+						wyboru/wpisywania daty - kalendarz, można ją wybrać - dzięń miesiąc,
+						rok, ale bez godziny<br />
+						<span>&lt;input type="time"&gt;</span> - pole do wyboru samego
+						czasu<br />
+						<span>&lt;input type="month"&gt;</span> - pole do wyboru samego
+						miesiąca<br />
+						<span>&lt;input type="week"&gt;</span> - pole do wyboru całego
+						tygodnia danego roku<br />
+						<span>&lt;input type="file"&gt;</span> - umożliwia wybranie pliku z
+						dysku, wczytanie go z dysku, po wybraniu wyświetla obok nazwę
+						wybranego pliku, reset też usuwa ten wybór<br />
+						<span>&lt;input type="color"&gt;</span> - można wybrać kolor w
+						sposób taki graficzny, wygląd zależy od przeglądarki<br />
+						<span>&lt;input type="range"&gt;</span> - potencjometr, pasek do
+						przewijania i wybrania czegoś, można uzywać min i max do określania
+						możliwości użytkownika<br />
+						<span>&lt;input type="email"&gt;</span> - zwykłe pole tekstowe do
+						wpisywania maila, pilnuje to pole aby był znak @<br />
+						<span>&lt;input type="hidden"&gt;</span> - ukryte pole, nie widać
+						go<br />
+						<span>&lt;input type="image"&gt;</span> - domyślnie pisze prześlij z
+						ikonka braku zdjęcia, przeładowuje stronę<br />
+						<span>&lt;input type="number"&gt;</span> - służy do psiwyania liczb,
+						nie pozwala na litery poza tymi matematycznymi, można uzyć min aby
+						nadać minimalną liczbę jaką da się wpisać oraz max czyli maksymalna,
+						pole dostosowuje rozmiar do min i max<br />
+						<span>&lt;input type="serach"&gt;</span> - służy do wyszukiwania,
+						może być też domyślnie x do usunięcia tego co w olu, wygląda jak
+						zwykłe pole<br />
+						<span>&lt;input type="url"&gt;</span> - służy do wpisywania linków,
+						wygląda jak zwykłe pole, po najechaniu informuje o tym, że trzeba
+						wpisać adres<br />
+						<span>&lt;input type="tel"&gt;</span> - służy do wpisywania numeru
+						telefonu, zwykłe pole tekstowe<br />
+						<span>&lt;textarea"&gt;&lt;/textarea"&gt;</span> - wielowierszowe
+						pole tekstowe, nie responsywne <br />
+
+						<br />
+						&lt;label&gt; - daje wizualny efekt, czyli tekst w formularzu,
+						pomaga też osobą z czytnikami ekranu<br />
+						<br />
+
+						<span>Wygląd jest zależny od:</span> przeglądarki (domyślny wygląd,
+						kiedy sami nie zmienimy wyglądu) lub od nas <br />
+						<br />
+						<br />
+
+						<u>Atrybuty:</u> <br />
+						<span>name="imię"</span> - nazywa kontrolkę, można dzięki temu potem
+						się do tego odwołać <br />
+						<span>value="Tekst"</span> - wpisuje coś do inputa. Jest to wtedy
+						wartość domyślna. Definiuje tekst na przycisku lub definiuje domyśną
+						wartość pola tekstowego<br />
+						<span>placeholder=""</span> - wpisuje coś do inputa, ale nie jako
+						wartość. Pokazuje się zawsze gdy nie ma niczego wpisanego w inpucie.
+						Informuje użytkownika co ma zawierać się w polu <br />
+						<span>size="20"</span> - można zmienić szerokość inputa (można pisać
+						bez px ale chodzi o piksele) <br />
+						<span>maxlength=""</span> - maksymalna ilość znaków jaką można
+						wpisć.
+						<br />
+						<span>required</span> - nie pozwala wysłąć pustego pola<span
+						></span> <br />
+						<span>readonly</span> - nie pozwala na zmienianie wartości pola
+						<br />
+						<span>Warto pamiętać że czasami psują się ciasteczka</span> <br />
+					</div>
+				</section class="puff-in-center">
+				<section class="puff-in-center">
+					<h3>Wstawianie obrazu na stronę</h3>
+					<div class="p">&lt;img src="źródło" alt="tekst alternatywy"&gt;</div>
+				</section>
+				<section class="puff-in-center">
+					<h3>Atrybut target</h3>
+					<div class="p">
+						&lt;a href="" target=""&gt;&lt;/a&gt; <br />
+						_blank - nowe okno <br />
+						_self - domyślnie, czyli w tym samym oknie <br />
+						_top - przywoływany dokument zostanie wstawiony na miejsce dokumentu
+						pierwszego w hierarchii naszych skoków, a więc na samą "górę".
+						<br />
+						_parent - przywoływany dokument zamieni dokument nadrzędny w
+						hierarchii dla bieżącego dokumentu <br />
+					</div>
+				</section>
+				<section class="puff-in-center">
+					<h3>Zadania:</h3>
+					<iframe
+						src="./[programiści]sprawdzian3-grA.pdf"
+						width="100%"
+						height="700vh"
+					>
+					</iframe>
+				</section>
+				<section class="puff-in-center">
+					<h3>Przykładowe odpowiedzi:</h3>
+					<div class="p">
+						<span>1.</span> <br />
+						Aby poprawnie utworzyć formularz należy pomiędzy znacznikami
+						&lt;form&gt; ... &lt;/form&gt; umieszczać kontrolki. Gdy chcemy
+						wyświetlić teksk przy kontrolce używamy znacznika &lt;label>&gt; ...
+						&lt;/label&gt;, w którym środku podajemy tekst do wyświetlenia.
+						Wiele kontrolek może mieć atrybuty takie jak np: value (przypisanie
+						wartości lub wyświetlany tekst na przycisku), name (nadanie nazwy -
+						używane przy kontrtolkach radio), readonly (tylko do odczytu),
+						request (wymagana odpowiedź/wybór), min (np. minimalna warotść
+						kontrolki range), max (np. maksymalna wartość kontrolki range),
+						maxlenght (maksymalna ilość znaków w polu tekstowym), size (rozmiar
+						np. pola tekstowego), placeholder (tekst który będzie wyświetlany w
+						polu tekstowym, ale jako tło, a nie wartość). <br />
+						<br />
+						&lt;form&gt; <br />
+						&lt;input <br />
+						type="text" name="imię" placeholder="Podaj swoje imię" size="50"
+						maxlength="10" required /&gt; <br />
+						&lt;input type="button" value="Przycisk" /&gt; <br />
+						<br />
+
+						&lt;label>Radio - Wybierz ulubiojną (jedną) markę
+						samochodu:&lt;/label&gt;
+						<br />
+						&lt;input type="radio" value="Audi" name="car" /&gt; <br />
+						&lt;label>Audi&lt;/label&gt; <br />
+						&lt;input type="radio" value="Nissan" name="car" /&gt; <br />
+						&lt;label>Nissan&lt;/label&gt; <br />
+						&lt;/form> <br />
+						<br />
+
+						<span>2.</span> Aby link otworzył się w nowej karcie lub oknie
+						należy użyć target="_blank" <br />
+						<br />
+
+						<span>3.</span> Jest to &lt;input type="number" /&gt;.
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<h2>Witryny i aplikacje internetowe | Notatki</h2>
+			Naucz się HTML Na witryny i aplikacje internetowe
+			<ul>
+				<li>
+					<a href="../../index.html" class="tracking-in-expand">
+						Główna <i class="fa-solid fa-book"></i> &nbsp;</a
+					>
+				</li>
+				<li>
+					<a href="../Dział 1/dzial_1.html" class="tracking-in-expand"
+						>Dział 1</a
+					>
+				</li>
+				<li>
+					<a href="../Dział 2/dzial_2.html" class="tracking-in-expand"
+						>Dział 2</a
+					>
+				</li>
+				<li class="wybrany">
+					<a href="../Dział 3/dzial_3.html" class="tracking-in-expand"
+						>Dział 3</a
+					>
+				</li>
+				<li>
+					<a href="../Dział 4/dzial_4.html" class="tracking-in-expand"
+						>Dział 4</a
+					>
+				</li>
+			</ul>
+			<span>Adam Biliński Kl.1C</span>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Strona internetowa zawierająca notatki, wskazówki i porady dotyczące HTML."
+		/>
+		<meta
+			name="keywords"
+			content="HTML, notatki, wskazówki, porady, Witryny, aplikacje internetowe"
+		/>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="../../styles/icons_all.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800;900;1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="./images/note_icon" type="image/x-icon" />
+		<title>Witryny i aplikacje internetowe | Notatki</title>
+	</head>
+	<body>
+		<header>
+			<h1 class="slide-in-blurred-top">
+				Witryny i aplikacje internetowe | Notatki
+				<i class="fa-solid fa-book"></i>
+			</h1>
+			<span class="h_name slide-in-right">Adam Biliński Kl.1C</span>
+		</header>
+		<nav class="navbar">
+			<div class="container nav-container">
+				<input class="checkbox" type="checkbox" name="" id="" />
+				<div class="hamburger-lines">
+					<span class="line line1"></span>
+					<span class="line line2"></span>
+					<span class="line line3"></span>
+				</div>
+				<div class="hamburger_back"></div>
+				<div class="menu-items">
+					<ul>
+						<li>
+							<a href="../../index.html" class="tracking-in-expand">
+								Główna <i class="fa-solid fa-book"></i> &nbsp;</a
+							>
+						</li>
+						<li class="wybrany">
+							<a href="./dzial_1.html" class="tracking-in-expand">Dział 1</a>
+						</li>
+						<li>
+							<a href="../Dział 2/dzial_2.html" class="tracking-in-expand"
+								>Dział 2</a
+							>
+						</li>
+						<li>
+							<a href="../Dział 3/dzial_3.html" class="tracking-in-expand"
+								>Dział 3</a
+							>
+						</li>
+						<li>
+							<a href="../Dział 4/dzial_4.html" class="tracking-in-expand"
+								>Dział 4</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<main>
+			<div class="main_m">
+				<section class="title_section puff-in-center">
+					<h2>Dział 1</h2>
+					Naucz się podstaw frontendu. Dowiedz się co to HTML i poznaj jego
+					strukturę.<br />
+					Znajdziesz tu podstawowe znaczniki.
+				</section>
+				<section class="puff-in-center">
+					<h3>Co to HTML? <i class="fa-brands fa-html5"></i></h3>
+					<p>
+						HTML to Język znaczników, służący do budowy struktury (szkieletu
+						strony).
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>Technologie frontendowe</h3>
+					<p>HTML + CSS + JS + „RWD”</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>Podstawowa struktura strony</h3>
+					<p>
+						&lt;!DOCTYPE html&gt; <br />
+						&lt;html lang="pl"&gt; <br />
+						&lt;head&gt; <br />
+						&lt;meta charset="UTF-8" /&gt; <br />
+						&lt;meta name="viewport" content="width=device-width, initial-
+						scale=1.0" /&gt; <br />
+						&lt;title&gtDocument&lt;/title&gt; <br />
+						&lt;/head&gt; <br />
+						&lt;body&gt;&lt;/body&gt; <br />
+						&lt;/html&gt;
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<p>
+						<span>!DOCTYPE html</span> - Deklaracji dokumentu HTML, informuje
+						przeglądarkę o rodzaju dokumentu, który ma przetworzyć <br />
+						<span>html lang="pl"</span> - Lang deklaruje język używany na
+						stronie <br />
+						<span>Head</span> - - sekcja nagłówkowa w dokumencie HTML, znajduje
+						się tu m.in metainformacje, tytuł karty <br />
+						<span>Html</span> - Definicja dokumentu <br />
+						<span>Body</span> - Treść strony, wszystko co widoczne
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>RWD</h3>
+					<p>
+						Responsywne projektowanie stron internetowych (ang. responsive web
+						design, RWD) – technika projektowania strony WWW, aby jej układ
+						dostosowywał się samoczynnie do rozmiaru okna przeglądarki, na
+						której jest wyświetlany np. przeglądarki, smartfonów czy tabletów.
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<p>
+						<span>meta charset="UTF-8"</span> - kodowanie polskich znaków,
+						deklaracja zestawu znaków, który będzie używany na stronie
+						internetowej, aby tekst wyświetlał się odpowiednio <br />
+						<span>meta</span> - metainformacje to dodatkowe (w większości
+						opcjonalne) wiadomości pozwalające na umieszczenie w dokumencie
+						informacji np. kodowanie znaków na stronie internetowej. Meta
+						znajduję się w sekcji head <br />
+						<span>title</span> - - m.in. do nadania tytuły karty <br />
+						<span>Nagłówki h</span> - nagłówki na stronie, od h1 do h6. Cyfry od
+						1 do 6 oznaczają hierarchię nagłówków, zaczynając od 1 jako
+						najważniejszego w hierarchii. h1 może być użyty na stornie tylko
+						raz, inne mogą wiele razy się powtarzać. Nagłówki pozwalają
+						użytkownikom i robotom Google, lepiej odnaleźć się w treściach na
+						stronie. Wyszukiwarka indeksuje witrynę między innymi zgodnie z tym,
+						co umieszczone w nagłówkach oraz w jakiej kolejności oraz ilości one
+						wystąpią. <br />
+						<span>p</span> - paragraf, akapit <br />
+						<span>b</span> - pogrubienie (niesemantyczne) <br />
+						<span>i</span> - kursywa (niesemantyczne) <br />
+						<span>u, ins</span> - podkreślenie (niesemantyczne) <br />
+						<span>del</span> - przekreślenie <br />
+						<span>s</span> - przekreślenie, gdy chcemy skreślić nieaktualną
+						treść na stronie, a nie chcemy jej usuwać <br />
+						<span>strong</span> - pogrubienie (semantyczne, czyli gdy chcemy coś
+						wyróżnić) <br />
+						<span>em</span> - podkreślenie (semantyczne, czyli gdy chcemy coś
+						wyróżnić) <br />
+						<span>sup</span> - index górny <br />
+						<span>sub</span> - index dolny <br />
+						<span>small</span> - znaczne zmniejsza tekst <br />
+						<span>q</span> - Cytat: („tekst”) <br />
+						<span>blockquote</span> - Cytat (z wcięciem) (odstęp tekst) <br />
+						<span>cite</span> - Cytat (z pochyleniem), używany gdy chcemy
+						odwołać się do jakiejś publikacji, pracy lub utworu literackiego
+						<br />
+						<span>br</span> - łamanie linii, przejście do nowego wiersza <br />
+						<span>abbr title="profesor" | prof. | /abbr</span> - skrótowce,
+						czyli skróty (najechanie pokazuje rozwinięcie skrótu). Skrót jest
+						domyślnie podkreślony kropkami. Abbr używamy do skrótów, które nie
+						mają kropki. <br />
+						<span>acronym </span> - służy do oznaczania akronimów, czyli bez
+						kropki (najechanie pokazuje rozwinięcie skrótu), Skrót jest
+						domyślnie podkreślony kropkami <br />
+						<span>dfn</span> - używamy do wyjaśnienia jakiegoś terminu lub
+						pojęcia <br />
+						<span>center</span> - Do wyśrodkowania treści na stronie, znacznik
+						przestarzały (nieużywany, do wyśrodkowania służy css) <br />
+						<span>font face | size | color</span> - Zmiana czcionki, kroju
+						czcionki | Zmiana rozmiaru czcionki | Zmiana koloru czcionki <br />
+						<span
+							>Font size zapisujemy w cyfrach od 1 od 7 (nie w px itd.)</span
+						>
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<p>
+						<span>Znaczniki Semantyczne</span> - Nowości HTML 5 m.in: <br />
+						footer, nav, section, header, main
+					</p>
+					<p>
+						<span>Znaczniki Zdeprecjonowane</span> m.in: <br />
+						frame, frameset, noframes, font, center
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>Znaczniki Semantyczne i Zdeprecjonowane</h3>
+					<p>
+						<span>Znaczniki Semantyczne to</span> takie znaczniki którego nazwa
+						opisuje jego zawartość i nie posiada szczególnych atrybutów.
+						Elementy semantyczne umożliwiają intuicyjny podział dokumentu i mogą
+						być szczególnie pomocne dla wyszukiwarek. <br />
+						<br />
+
+						<span>Znaczniki Zdeprecjonowane to</span> przestarzałe znaczniki lub
+						atrybuty, które zostały uznane za zbędne i zastąpione innym,
+						równoważnym rozwiązaniem np. w css. <br />
+						<br />
+
+						<span>Semantyka HTML</span>: Semantyka HTML to najprościej mówiąc
+						wykorzystanie znaczników semantycznych, zgodnie z tym do czego
+						zostały one stworzone. Ponieważ semantyka html jest jedną z
+						podstawowych zasad dobrego SEO (SEO czyli Optymalizacja dla
+						wyszukiwarek internetowych). <br />
+						<br />
+
+						Semantyka ma również duży wpływ na przejrzystość kodu. <br />
+
+						<span>Wykorzystywanie semantycznych znaczników HTML</span> może
+						przyspieszyć indeksowanie strony przez roboty wyszukiwarek. <br />
+
+						<span>Semantyczne znaczniki HTML pomagają</span> w lepszym
+						zrozumieniu kodu strony
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>Framework</h3>
+					<p>
+						Framework: Framework jest narzędziem, które dostarcza gotowe
+						komponenty lub rozwiązania. Te są dostosowywane w celu
+						przyspieszenia rozwoju danego projektu. Framework może zawierać
+						bibliotekę lub biblioteki, do których możemy sięgać w trakcie pracy.
+						Dodatkowo framework może obejmować programy pomocnicze, kompilatory,
+						biblioteki kodu, zestawy narzędzi. Dzięki frameworkom tworzenie
+						staje się bardziej efektywne. <br />
+						<br />
+
+						<span>Framewokr-ki:</span> <br />
+						Bootstrap to popularny framework CSS <br />
+						jQuery to biblioteka JavaScript <br />
+						TypeScript to język programowania stworzony przez firmę Microsoft
+						jako nadzbiór języka JavaScript <br />
+						React jest biblioteką języka programowania JavaScript <br />
+						React Native służy do tworzenie aplikacji wieloplatformowych
+						JavaScript<br />
+						Angular to framework i platforma do tworzenia SPA, napisany w języku
+						TypeScript<br />
+						Vue do aplikacji webowych typu front-end, oparty na języku
+						JavaScript oraz modelu Model-View-Controller<br />
+						NativeScript do tworzenia aplikacji mobilnych na platformy Apple iOS
+						i Android<br />
+					</p>
+				</section>
+				<section class="puff-in-center">
+					<h3>Zadania:</h3>
+					<p class="zadania">
+						<img src="./images/zadanie (1).jpg" alt="zdjecie zadania" /> <br />
+						Odwzoruj zaproszenie w HTML używając wiedzy z Działu pierwszego.
+						Uważaj aby nic nie pominąć.
+					</p>
+					<p class="zadania">
+						<img src="./images/zadanie (2).jpg" alt="zdjecie zadania" /> <br />
+						Odwzoruj to w HTML używając wiedzy z Działu pierwszego. Uważaj aby
+						nic nie pominąć.
+					</p>
+					<p class="zadania">
+						<img src="./images/zadanie (3).jpg" alt="zdjecie zadania" /> <br />
+						Odwzoruj podaną poezję w HTML używając wiedzy z Działu pierwszego.
+						Uważaj aby nic nie pominąć.
+					</p>
+					<p class="zadania">
+						<img src="./images/zadanie (4).jpg" alt="zdjecie zadania" /> <br />
+						Odwzoruj zaproszenie w HTML używając wiedzy z Działu pierwszego.
+						Uważaj aby nic nie pominąć.
+					</p>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<h2>Witryny i aplikacje internetowe | Notatki</h2>
+			Naucz się HTML Na witryny i aplikacje internetowe
+			<ul>
+				<li>
+					<a href="../../index.html" class="tracking-in-expand">
+						Główna <i class="fa-solid fa-book"></i> &nbsp;</a
+					>
+				</li>
+				<li class="wybrany">
+					<a href="./dzial_1.html" class="tracking-in-expand">Dział 1</a>
+				</li>
+				<li>
+					<a href="../Dział 2/dzial_2.html" class="tracking-in-expand"
+						>Dział 2</a
+					>
+				</li>
+				<li>
+					<a href="../Dział 3/dzial_3.html" class="tracking-in-expand"
+						>Dział 3</a
+					>
+				</li>
+				<li>
+					<a href="../Dział 4/dzial_4.html" class="tracking-in-expand"
+						>Dział 4</a
+					>
+				</li>
+			</ul>
+			<span>Adam Biliński Kl.1C</span>
+		</footer>
+	</body>
+</html>
